@@ -34,7 +34,7 @@ main(){
     echo "creating $DEVICE_NAME"
     $AVD_CMD create avd \
     --force \
-    --name $DEVICE_NAME \
+    --name test \
     --package "system-images;android-$DEVICE_SDK;google_apis;x86" \
     --tag "google_apis" \
     --device $(getAvdDeviceId $1) \
