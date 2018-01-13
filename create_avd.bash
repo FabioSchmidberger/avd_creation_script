@@ -35,6 +35,7 @@ main(){
     $AVD_CMD create avd \
     --force \
     --name test \
+    --abi google_apis/x86 \
     --package "system-images;android-$DEVICE_SDK;google_apis;x86" \
     --tag "google_apis" \
     --device $(getAvdDeviceId $1) \
